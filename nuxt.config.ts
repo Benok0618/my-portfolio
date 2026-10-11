@@ -19,6 +19,10 @@ export default defineNuxtConfig({
     output: {
       publicDir: 'dist',
     },
+    prerender: {
+      crawlLinks: true,
+      routes: ['/'],
+    },
   },
   css: [
     '@fontsource-variable/inter/index.css',
